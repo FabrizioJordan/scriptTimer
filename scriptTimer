@@ -1,7 +1,20 @@
 #!/bin/bash
 
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+ORANGE='\033[0;33m'
+BLUE='\033[0;34m'
+CYAN='\033[0;36m'
+WHITE='\033[0;37m'
+NC='\033[0m' # no color
+
+
+echo -e "${RED}$USER${NC} ¿What command you want to execute?"
+
+read -rp "Enter option: " option
+
 start=$(date +%s)
-# (tu comando acá)
+exec $option
 sleep 3
 end=$(date +%s)
 echo "Tiempo de ejecución: $((end - start)) segundos"
