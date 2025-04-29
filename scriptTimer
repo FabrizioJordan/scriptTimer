@@ -1,0 +1,7 @@
+#!/bin/bash
+
+start=$(date +%s)
+# (tu comando acá)
+sleep 3
+end=$(date +%s)
+echo "Tiempo de ejecución: $((end - start)) segundos"
