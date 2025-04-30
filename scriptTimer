@@ -9,12 +9,18 @@ WHITE='\033[0;37m'
 NC='\033[0m' # no color
 
 
-echo -e "${RED}$USER${NC} ¿What command you want to execute?"
+echo -e "\n${RED}$USER${NC} ¿What command you want to execute?\n"
 
 read -rp "Enter option: " option
 
+echo -e "\n${BLUE}Executing: ${CYAN}${option}${NC}\n"
+echo $option
+eval "$option"
+
 start=$(date +%s)
-exec $option
-sleep 3
+
+sleep 0
 end=$(date +%s)
-echo "Tiempo de ejecución: $((end - start)) segundos"
+
+duration=$((end - start))
+echo -e "\n${GREEN}Execution time: ${NC}${duration} seconds\n"
