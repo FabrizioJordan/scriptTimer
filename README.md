@@ -52,3 +52,42 @@ Or you can run this command (to create a Symlink):
 sudo ln -s /usr/local/bin/scriptTimer /usr/local/bin/xtime
 ```
 
+
+## 🧪 Usage
+
+
+### 📘 How this script works?
+
+It's easy. Just run the script and it will ask what command you want to time.
+
+And finally the script will print the **total execution time**. 
+
+### 💡 Examples of use
+
+If you installed correctly the script, you just need to run the command.
+
+```scriptTimer``` if you installed it normally or ```xtime``` if you use the shorter command.       
+
+Then, just type the command you want to measure and hit enter.
+
+
+
+## 🗑️ Uninstallation
+
+During installation, the script is copied to /usr/local/bin. 
+
+If you want to uninstall it, follow these steps:
+
+To remove the script:
+
+```
+find /home/ -type f -name "scriptTimer" -exec rm {} \; && sudo find /usr/ -type f -name "scriptTimer" -exec rm {} \;
+```
+
+If you renamed the script during installation (e.g., to xtime):
+
+```
+find /home/ -type f -name "xtime" -exec rm {} \; && sudo find /usr/ -type f -name "xtime" -exec rm {} \;
+```
+
+
