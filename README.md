@@ -7,6 +7,7 @@ A simple timer for your scripts / commands
 Only you need to have:
 
 Bash 4.0 or higher
+
 And GNU 'date' command with nanoseconds support
 
 
