@@ -40,12 +40,12 @@ chmod +x scriptTimer && sudo cp scriptTimer /usr/local/bin
 ```
 
 
-After that, you can use scriptTimer from anywhere in your terminal.
+After that, you can use scriptTimer from anywhere in your terminal
 
 
 ### ✂️ Shorter command (optional)
 
-If you want a shorter command, you can create a alias like ```xtime``` or ```sTimer```.
+If you want a shorter command, you can create a alias like ```xtime``` or ```sTimer```
 
 Or you can run this command (to create a Symlink):
 
@@ -59,23 +59,23 @@ sudo ln -s /usr/local/bin/scriptTimer /usr/local/bin/xtime
 
 ### 📘 How this script works?
 
-It's easy. Just run the script and it will ask what command you want to time.
+It's easy. Just run the script and it will ask what command you want to time
 
-And finally the script will print the **total execution time**. 
+And finally the script will print the **total execution time**
 
 ### 💡 Examples of use
 
-If you installed correctly the script, you just need to run the command.
+If you installed correctly the script, you just need to run the command
 
-```scriptTimer``` if you installed it normally or ```xtime``` if you use the shorter command.       
+```scriptTimer``` if you installed it normally or ```xtime``` if you use the shorter command   
 
-Then, just type the command you want to measure and hit enter.
+Then, just type the command you want to measure and hit enter
 
 
 
 ## 🗑️ Uninstallation
 
-During installation, the script is copied to /usr/local/bin. 
+During installation, the script is copied to /usr/local/bin
 
 If you want to uninstall it, follow these steps:
 
