@@ -22,6 +22,7 @@ echo -e "\n${BLUE}Executing: ${CYAN}${option}${NC}\n"
 echo $command
 
 
+
 #Times and execute commands
 
 start_ns=$(date +%s%N)
@@ -33,14 +34,15 @@ end_ns=$(date +%s%N)
 
 #Calculate duration in nanoseconds
 
-elapsed_ns=$((end_ns - start_ns))
+timed_ns=$((end_ns - start_ns))
 
 
 #Extract parts
 
-seconds=$((elapsed_ns / 1000000000))
-milliseconds=$(( (elapsed_ns / 1000000) % 1000 ))
-microseconds=$(( (elapsed_ns / 1000) % 1000 ))
+seconds=$((timed_ns / 1000000000))
+milliseconds=$(( (timed_ns / 1000000) % 1000 ))
+microseconds=$(( (timed_ns / 1000) % 1000 ))
+
 
 
 #Show
